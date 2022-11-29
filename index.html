@@ -1,5 +1,75 @@
-<html>
-<body>
-<p>Webdemos located here!</p>
-</body>
+<html xmlns="https://webdemos.blendertimer.com">
+	<head>
+		<title>Web Demos - BlenderTimer</title>
+		<link href="./6912519/images/Logo-BT-32.png" rel="shortcut icon"/>
+	</head>
+	<body onload="baseLoad()">
+		<a href="https://www.blendertimer.com"><img src="./6912519/images/nav-logohome.png" id="nav-home"></a>
+		<h1 id="title">Web Demos</h1>
+		<h2 id="no-demos" style="opacity: 0">No demos yet!<h2>
+	</body>
 </html>
+<style>
+body, html {
+	height: 100%;
+	margin: 0px;
+	box-sizing: border-box;
+	padding: 20px;
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.8) inset;
+}
+
+body {
+	background: #1E1E1E;
+	color: #F5F5F5;
+	font-family: monospace;
+	font-size: 12pt;
+	box-shadow: none;
+}
+
+#nav-home {
+	background: #1E1E1E;
+	width: 150px;
+	position: absolute;
+	transition: 0.5s;
+	margin: 0px 0px 0px 0px;
+	padding: 7px 15px;
+	border-radius: 30px;
+}
+
+#nav-home:hover {
+	background: #2E2E2E;
+	width: 170px;
+	margin: -3px 0px 0px -10px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+#title{
+	text-align: center;
+	font-size: 25pt;
+	font-weight: bold;
+	text-shadow: 0px 0px 15px rgba(0,0,0,1);
+	cursor: default;
+	margin: 10px 0px 0px 0px;
+}
+
+#no-demos{
+	text-align: center;
+	font-size: 25pt;
+	font-weight: bold;
+	color: #2E2E2E;
+	cursor: default;
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0px -40px;
+	bottom: 45vh;
+	transition: 1s;
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+</style>
+<script type="text/javascript">
+	var noDemos = document.getElementById('no-demos');
+	function baseLoad() {
+		noDemos.style.opacity = "1";
+	}
+</script>
