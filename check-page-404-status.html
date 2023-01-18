@@ -114,16 +114,14 @@ body p {
         }
         function checkStatus() {
                 $.ajax({
-                        method: 'HEAD',
+                        type: 'HEAD',
                         url: document.getElementById("urlInput").textContent,
-                        statusCode: {
-                        404: function() {
+                        success: function() {
                                 document.getElementById("404check").textContent = "The page is available!";
                         },
-                        200: function() {
+                        error: function() {
                                 document.getElementById("404check").textContent = "The page does not exist.";
                         }
-                }
         });  
 }
 </script>
