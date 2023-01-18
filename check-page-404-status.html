@@ -114,13 +114,15 @@ body p {
         }
         function checkStatus() {
                 $.ajax({
-                    type: 'HEAD',
-                    url: document.getElementById("urlInput").textContent,
-                success: function() {
-                        document.getElementById("404check").textContent = "The page is available!";
-                },
-                error: function() {
-                        document.getElementById("404check").textContent = "The page does not exist.";
+                        method: 'HEAD',
+                        url: document.getElementById("urlInput").textContent,
+                        statusCode: {
+                        404: function() {
+                                document.getElementById("404check").textContent = "The page is available!";
+                        },
+                        200: function() {
+                                document.getElementById("404check").textContent = "The page does not exist.";
+                        }
                 }
         });  
 }
