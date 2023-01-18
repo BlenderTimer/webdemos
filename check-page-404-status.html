@@ -114,20 +114,18 @@ body p {
         }
         function checkStatus() {
                 jQuery.ajax({
-
-            type:"post",
-            dataType:"json",
-            url: document.getElementById("urlInput").textContent,,
-            data: {action: 'submit_data', info: info},
-            success: function(data) {
-                document.getElementById("404check").textContent = "The page is available!";
-            },
-            error: function(data) {
-                document.getElementById("404check").textContent = "The page does not exist.";
-            },
-        });
-
-        $(":input").val('');
-        return false; 
+                        type:"post",
+                        dataType:"json",
+                        url: document.getElementById("urlInput").textContent,
+                        data: {action: 'submit_data', info: info},
+                        success: function(data) {
+                                document.getElementById("404check").textContent = "The page is available!";
+                        },
+                        error: function(data) {
+                                document.getElementById("404check").textContent = "The page does not exist.";
+                        },
+                });
+                $(":input").val('');
+                return false; 
 }
 </script>
