@@ -2,11 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://webdemos.blendertimer.com/</loc>
-<lastmod>2023-01-16T20:56:38-08:00</lastmod>
+<lastmod>2023-01-17T23:20:41-08:00</lastmod>
 </url>
 <url>
 <loc>https://webdemos.blendertimer.com/animated-canvas.html</loc>
 <lastmod>2022-12-10T21:16:35-08:00</lastmod>
+</url>
+<url>
+<loc>https://webdemos.blendertimer.com/check-page-404-status.html</loc>
+<lastmod>2023-01-17T23:20:41-08:00</lastmod>
+</url>
+<url>
+<loc>https://webdemos.blendertimer.com/confirm-human.html</loc>
+<lastmod>2023-01-17T23:20:41-08:00</lastmod>
 </url>
 <url>
 <loc>https://webdemos.blendertimer.com/get-cursor-position.html</loc>
