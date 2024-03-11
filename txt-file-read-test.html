@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>TXT File Read Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="./favicon.png" type="image/x-icon">
+	</head>
+	<body>
+		<textarea id="t"></textarea>
+		<script type="text/javascript">
+			fetch("./robots.txt")
+				.then((res) => res.text())
+				.then((text) => {
+					document.getElementById('t').value = "Loaded: robots.txt\n" + text;
+				})
+				.catch((e) => console.error(e));
+		</script>
+	</body>
+</html>
