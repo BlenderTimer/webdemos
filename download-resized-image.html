@@ -13,7 +13,7 @@
 		</style>
 	</head>
 	<body>
-		<h3>Version 2</h3>
+		<h3>Version 3</h3>
 		<label for="w">Width: </label><input id="w" type="number" value=200>
 		<label for="w">Height: </label><input id="h" type="number" value=200>
 		<button onclick="downloadResizedImage()" id="dl">Download</button>
@@ -27,8 +27,8 @@
 				img.src = "./static-0/files/images/photo-test.jpg";
 				img.id = "resized-image";
 				img.style.display = "block";
-				img.style.width = width + "px";
-				img.style.height = height + "px";
+				img.style.width = "0px";
+				img.style.height = "0px";
 				var imgLoaded = setInterval(function() {
 					if (img.naturalWidth > 0 && img.naturalHeight > 0) {
 						setTimeout(function() {
