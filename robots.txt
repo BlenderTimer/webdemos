@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /static-0/
-Allow: /
+Disallow: /
